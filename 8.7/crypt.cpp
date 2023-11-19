@@ -12,9 +12,9 @@
 ** -------------------------------------------------------------------------*/
 
 #include <iostream>
+#include <string>
 #include <vector>
 #include <fstream>
-#include <cstdlib>
 
 using namespace std;
 
@@ -110,7 +110,8 @@ int main(int argc, char* argv[]) {
         string in;
 		
 		// read encrypted string from encrypt.txt
-        fs >> in;
+        //fs >> in;
+        getline(fs, in);
 
         // determine the index of each character
         vector<int> indices;

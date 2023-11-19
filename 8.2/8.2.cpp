@@ -38,7 +38,7 @@ int main() {
 	bool isWordExistsInWords; // set to true if data string is found in words string vector
 	
 	// read each word in data file
-	while (fs >> word) {
+	while (getline(fs, word)) {
 
 		isWordExistsInWords = false;
 
