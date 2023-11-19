@@ -45,14 +45,14 @@ vector<char> getStringDistinct(vector<char> input, int input_size) {
 
             }
 
-            //if (isInputInSymbols) {
+            if (isInputInSymbols) {
                 //count[index] = ++count[index];
-            //}
+            }
 
-            //else {
-                //symbols.push_back(input[i]);
+            else {
+                symbols.push_back(input[i]);
                 //count.push_back(1);
-            //}
+            }
         }
     }
     
@@ -92,7 +92,7 @@ int main(int argc, char* argv[]) {
             for (int j = 0; j < keyword.size(); j++) {
                 if (keyword[j] == lettersOfAlphabet[i]) {
                     isInKeywordModified = true;
-                    break;
+                    break; // 
                 }
             }
 
