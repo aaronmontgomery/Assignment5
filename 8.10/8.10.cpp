@@ -5,7 +5,7 @@
 ** Class: 	CSC 242
 ** Assignment: 	Assignment 5 - P8.10
 ** File: 	8.10.cpp
-** Description: Enter brief project description here.
+** Description: Encrypt or decrypt using character pairs in a playfair cipher.
 **
 ** Author: 	Aaron Montgomery
 ** Date: 	11/19/2023
@@ -58,6 +58,7 @@ vector<char> getStringDistinct(vector<char> input, int input_size) {
     return symbols;
 }
 
+// swap letter pairs to encrypt or decrypt the board
 void encryptDecrypt(vector<vector<char>>& board) {
     
     char tempChar = board[0][2];
