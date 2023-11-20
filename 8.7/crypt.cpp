@@ -92,7 +92,7 @@ int main(int argc, char* argv[]) {
             for (int j = 0; j < keyword.size(); j++) {
                 if (keyword[j] == lettersOfAlphabet[i]) {
                     isInKeywordModified = true;
-                    break; // 
+                    break;
                 }
             }
 
