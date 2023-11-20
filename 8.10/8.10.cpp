@@ -72,11 +72,20 @@ void encryptDecrypt(vector<vector<char>>& board) {
 
 int main() {
     
-    vector<char> lettersOfAlphabet = { 'A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z' }; // 'J'
+    const vector<char> lettersOfAlphabet = { 'A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z' }; // 'J'
     
-    string keyword = "HELLO";
-    vector<char> keywordVector = { 'H', 'E', 'L', 'L', 'O' };
+    cout << "Input: ";
     
+    //string keyword = "HELLO";
+    string keyword;
+    cin >> keyword;
+
+    //vector<char> keywordVector = { 'H', 'E', 'L', 'L', 'O' };
+    vector<char> keywordVector;
+    for (int i = 0; i < keyword.length(); i++) {
+        keywordVector.push_back(keyword[i]);
+    }
+
     // get string with distinct characters
     keywordVector = getStringDistinct(keywordVector, keywordVector.size());
     
